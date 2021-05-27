@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlnsi xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<xs:schema>
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="RemediosSA"></xs:element>
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="pedido"></xs:element>
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="sucursal"></xs:element>
+                                    <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="codigoSucursal" type="xs:string">
+                                            <xs:pattern value="[A-Z],[0-9](7)"></xs:pattern>
+                                        </xs:element>
+                                        <xs:element name="direccion" type="xs:string"></xs:element>
+                                        <xs:element name="trabajador" type="xs:string"></xs:element>
+                                        <xs:element name="fechaPedido" type="xs:date"></xs:element>
+                                        <xs:element name="observaciones" type="xs:string"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                                <xs:element name="articulo"></xs:element>
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="codigoArticulo" type="xs:string">
+                                            <xs:pattern value="[A-Z](3)-[0-9](3)"></xs:pattern>
+                                        </xs:element>
+                                        <xs:element name="numeroUnidad" type="xs:integer"></xs:element>
+                                        <xs:element name="precioUnidad" type="xs:decimal"></xs:element>
+                                        <xs:element name="observacionesPedido" type="xs:string"></xs:element>
+                                        <xs:element name="revision" type="xs:integer"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:sequence>
+                </xs:complexType>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

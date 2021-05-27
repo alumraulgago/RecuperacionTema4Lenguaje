@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmlns:xsi = 'RemediosSA' xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation = "LosRemediosSA.xsd"></xmlns:xsi>
+<!DOCTYPE RemediosSA SYSTEM "LosRemediosSA.dtd">
+<RemediosSA>
+    <pedido>
+        <sucursal>
+            <codigoSucursal></codigoSucursal>
+            <direccion>Calle Simón Bolivar, Nº12</direccion>
+            <trabajador>Antonio Benítez</trabajador>
+            <fechaPedido>10-02-2013</fechaPedido>
+            <observaciones>Urgente</observaciones>
+        </sucursal>
+        <articulo>
+            <codigoArticulo></codigoarticulo>
+            <numeroUnidad>67</numeroUnidad>
+            <precioUnidad>45.35</precioUnidad>
+            <observacionesPedido>Artículo de fiesta</observacionesProducto>
+            <revision>20</revision>
+        </articulo>
+    </pedido>
+</RemediosSA>
